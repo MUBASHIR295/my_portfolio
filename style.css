@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    display: flexbox;
+}
+body{
+    background-color: #080808;
+    color:#fff;
+   display: flexbox;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../portfoliomy/PXL_20230117_172006124.NIGHT_2__1_-removebg\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+.container img{
+    margin-top: auto;
+}
+
+.container{
+    padding: 10px 5%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative  ;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+  
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:  #ff004f;
+}
+
+/*-------about-----*/
+
+#About{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+
+}
+.about-col1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.about-col2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contenes ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contenes ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contenes{
+    display:none;
+}
+.tab-contenes.active-tab{
+    display: block;
+}
+#Experience b{
+    font-size: 18px;
+}
+
+
+/*------Services--------*/
+
+#Services{
+    padding: 30px 0;
+
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+.services-list h2{
+    color: #ff004f;
+}
+.services-list,i{
+    font-size: 50px;
+    margin-top: 30px;
+   margin-bottom: 20px;
+}
+.services-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+.services-list a:hover{
+    color: #ff004f;
+    font-size: 20px;
+
+}
+.services-list ,h2 ,p {
+    font-size: 19px;
+}
+
+/*-------portfolio--------*/
+#portfolio{
+    padding: 50px 0;
+    margin-bottom: -100px;
+    
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -30px ;
+    margin-bottom: -100px;
+    display: flex;
+}
+.img1{
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+    display: flexbox;
+}
+.img2{
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+    display:flexbox;
+}
+.layer1{
+    width: 30%;
+    height: 70px;
+    margin: auto;
+    position: relative;
+    right: 20vmax;
+    display: flexbox;
+}
+.layer1 h3{
+    color:#ff004f;
+    font-size: 30px;
+    margin-top: 100px;
+    display: flex;
+}
+.layer1 p{
+    font-size: 25px;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+}
+.layer1   a:hover{
+    font-size: 20px;
+    display: flexbox;
+}
+.layer2{
+    width:30%;
+    height: 70px; 
+    margin: auto;
+    position: relative;
+    left: 20vmax;
+    display: flexbox;
+    
+}
+.layer2 h3{
+    color:#ff004f;
+    font-size: 30px;
+    margin-top: -70px;
+    display: flex;
+    position: relative;
+}
+.layer2 p{
+    font-size: 25px;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    position: relative;
+}
+.layer1 a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    display: flexbox;
+}
+.layer2 a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    display: flexbox;
+}
+.layer2 a:hover{
+    font-size: 20px;
+    display: flexbox;
+}
+
+
+/*------contact-------*/
+
+#contact{
+    width: 100%;
+    padding: 90px;
+    margin-top: 40vh;
+    position: relative;
+    right: -1%;
+    display: flex;
+    
+}
+#contact .sub-title{
+    position: absolute;
+    margin-top: -10vh;
+    left: 48px;
+}
+.social-icon i{
+    font-size: 80px;
+    margin-top: 70px;
+    display: inline-block;
+
+    
+}
+
+.social-icon a{
+     margin: 60px;
+     color: #ff004f;
+     
+}
+.social-icon ul li{
+    width: 100%;
+    height: 100%;
+    display: inline;
+    
+}
+.btn{
+    width: 10%;
+    padding: 8px;
+    font-size: 30px;
+    border-radius: 17px;
+    display: flexbox;
+    background-color: #ff004f;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.btn-btn2{
+    padding: 8px;
+    font-size: 30px;
+    border-radius: 17px;
+    display: flex;
+    position: relative;
+    background-color: #ff004f;
+    color: #fff;
+    text-decoration: none;
+}
+.contactact-right{
+    margin-top: 40px;
+    display: flex;
+}
+.contactact-right form{
+    width: 90%;
+    display: flexbox;
+}
+form input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+   display: flexbox;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 1px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    display: flexbox;
+}
+.copyright i{
+    color: #ff004f;
+    font-size: 25px;
+    display: flexbox;
+}
